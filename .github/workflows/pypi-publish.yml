@@ -36,6 +36,7 @@ jobs:
           sparse-checkout: |
             .github/workflows/requirements/publish-requirements.txt
           sparse-checkout-cone-mode: false
+          clean: false
       - name: Install Python dependencies
         run: pip install --require-hashes -r .github/workflows/requirements/publish-requirements.txt
 
